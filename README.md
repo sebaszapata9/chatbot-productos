@@ -74,3 +74,31 @@ python -m scripts.chat_catalog
 
 Prueba consultas como `¿Cuánto cuesta la camisa azul?`, `¿Hay stock del polo negro?`
 o `Necesito una cotización por 80 unidades`. Escribe `salir` para terminar.
+
+## Status al 24/07
+Hoy hemos testeado en la consola el bot, y cumple con las siguientes tareas:
+
+carga el catálogo desde Google Sheets al iniciar;
+busca productos usando el servicio existente;
+responde precio, stock y descripción;
+informa productos sin stock;
+excluye productos inactivos;
+pide precisión cuando encuentra varias coincidencias similares;
+deriva productos no encontrados;
+deriva cotizaciones, descuentos, pedidos, compras, reclamos y solicitudes de asesor;
+muestra en terminal el motivo de la derivación.
+
+
+## Pasos completados
+1. Crear la plantilla de Google Sheets.
+2. Implementar y probar el servicio de catálogo sin IA.
+3. Crear búsquedas por SKU, nombre y palabras clave.
+4. Simular conversaciones desde una terminal.
+
+## Siguientes pasos:
+5. Incorporar el modelo únicamente para interpretar mensajes y redactar.
+6. Agregar reglas de derivación. (aquí ya se tiene un avance preliminar, pero se puede mejorar)
+7. Conectar el webhook de WhatsApp.
+8. Desplegar el backend.
+9. Probar conversaciones reales.
+10. Agregar MCP como módulo demostrativo, no como dependencia central
